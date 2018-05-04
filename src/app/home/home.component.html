@@ -1,0 +1,5 @@
+<button (click) = "clockClick()" >clock</button> 
+<button (click) = "timerClick()">Timer</button>
+
+<p *ngIf = "showClock" > {{ currentTime | date : 'shortTime'}}</p>
+<span *ngIf = "showTimer" > {{countDown | async}}</span> 
